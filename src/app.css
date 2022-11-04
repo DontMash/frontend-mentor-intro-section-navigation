@@ -16,6 +16,18 @@
   }
 
   :root {
-    @apply font-epilogue bg-almost-white;
+    @apply font-epilogue bg-almost-white text-medium-gray;
+  }
+
+  details::marker {
+    display: none;
+  }
+  details summary {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+  }
+  details summary::-webkit-details-marker {
+    display: none;
   }
 }
